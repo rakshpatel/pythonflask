@@ -1,11 +1,17 @@
 # Pythonflask app
 
-
+## Source (dir)
+Contains everything related to flask apps
+1. Source code
+2. Requirement file
+3. Dockerfile
 
 ### Dockerfile
 Use this to build pythonflask app image. 
 > Execute following command to build the docker imag
 ```
+# If you are not under source dir
+cd source
 docker build --tag pythonflask .
 ```
 
