@@ -1,7 +1,7 @@
 # Table of Content
 1. [Source(dir)](#source)
 2. [Database](#db)
-3. [Assumptions](#assumptions)
+3. [Assumptions/Improvements](#assumptions)
 4. [How to run](#howtorun)
 
 <div id="source">
