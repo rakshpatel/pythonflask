@@ -16,6 +16,8 @@ Contains everything related to flask apps
     3.1 To build docker image for this application
 
 <div id="db">
+
+# Database/Tables
 This simple application contains two tables, __ship__ and __shippositions__
 
 ## SHIPS
