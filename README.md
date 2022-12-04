@@ -60,7 +60,12 @@ Made following assumptions for this app
 
 # How to start the application and access endpoints
 
-Clone the application to your local environment into one directory
+Clone the application to your local environment into one directory and go to downloaded app
+
+```
+git clone https://github.com/rakshpatel/pythonflask.git
+cd pythonfask
+```
 
 ## Using Dockerfile
 
