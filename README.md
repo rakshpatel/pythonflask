@@ -153,18 +153,18 @@ Once you have started the application either using Docker or as standalone appli
 
     # E.g.
     {
-        "ship": {
+        "ships": {
             "imo": 9632179,
             "positions": [
-                {
-                    "datetime": "2019-01-14 18:40:18+00",
-                    "latitude": 49.8978996276855,
-                    "longitude": -2.51836657524109
-                },
                 {
                     "datetime": "2019-01-14 18:59:06+00",
                     "latitude": 49.9175834655762,
                     "longitude": -2.40604996681213
+                },
+                {
+                    "datetime": "2019-01-14 18:40:18+00",
+                    "latitude": 49.8978996276855,
+                    "longitude": -2.51836657524109
                 }
             ]
         }
