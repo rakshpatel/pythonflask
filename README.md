@@ -41,6 +41,7 @@ CREATE TABLE "shipsposition" (
 ```
 
 <div id="assumptions">
+
 # Assumptions/Improvements
 Made following assumptions for this app
 
@@ -54,6 +55,7 @@ Made following assumptions for this app
 8. For production grade application more validation should be added
 
 <div id="howtorun">
+
 # How to start the application and access endpoints
 
 Clone the application to your local environment into one directory
@@ -94,6 +96,7 @@ Go to section [Access required endpoints](#access)
 Go to section [Access required endpoints](#access)
 
 <div id="access">
+
 ## Access required endpoints
 
 Once you have started the application either usign Docker or as standalone application
