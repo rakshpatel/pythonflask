@@ -88,13 +88,14 @@ Go to section [Access required endpoints](#access)
 
 1. Create virtual environment and activate
     ```
-    # Go to dir, where repo was cloned
+    # Go to dir, where repo was cloned (This will differ based on OS)
     virtualenv appenv
-    source /appenv/Scripts/activate
+    source appenv/bin/activate
     ```
 2. Install required python dependancies
     ```
     # Go to source directory
+    cd source
     pip install -f requirements.txt
     ```
 3. Start Flask application
