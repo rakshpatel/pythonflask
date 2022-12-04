@@ -77,7 +77,8 @@ cd pythonflask
     docker build --tag pythonflask .
     ```
 
-2. Once image building is successful, start the docker container
+2. Once image building is successful, start the docker container. Assuming nothing is running on port 5000 on your machine, if you are getting error about __address already in use__, please change the port in below command to something else.
+
     ```
     docker run --name pythonflask -d -p 5000:5000 pythonflask
     ```
