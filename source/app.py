@@ -17,19 +17,26 @@ class Ships(Resource):
         for ships in curs.execute(query):
             shipdata.append({"imo": ships[0], "name": ships[1]})
         conn.close()
-        return {"ship": shipdata}
+        
+        if shipdata:
+            return {"ship": shipdata}
+        else:
+            return {"shp": "No data found"}
 
 
 class ShipsPosition(Resource):
     def get(self, imo):
         conn = sqlite3.connect(DATABASE_PATH)
-        query = "SELECT imo, datetime, latitude, longitude FROM SHIPSPOSITION WHERE imo={imo} ORDER BY 2 ".format(imo=imo)
+        query = "SELECT imo, datetime, latitude, longitude FROM SHIPSPOSITION WHERE imo={imo} ORDER BY 2 DESC".format(imo=imo)
         curs = conn.cursor()
         shipspositions = []
         for shipsposition in curs.execute(query):
             shipspositions.append({"datetime": shipsposition[1], "latitude": shipsposition[2], "longitude": shipsposition[3]})
         conn.close()
-        return {"ship": {"imo": imo, "positions": shipspositions}}
+        if shipspositions:
+            return {"ship": {"imo": imo, "positions": shipspositions}}
+        else:
+            return {"ship": "no data found for imo: {}".format(imo)}
 
 @app.route("/")
 def index():
