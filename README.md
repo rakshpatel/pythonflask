@@ -79,7 +79,7 @@ cd pythonflask
 
 2. Once image building is successful, start the docker container
     ```
-    docker run -d -p 5000:5000 pythonflask
+    docker run --name pythonflask -d -p 5000:5000 pythonflask
     ```
 Go to section [Access required endpoints](#access) 
     
