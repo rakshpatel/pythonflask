@@ -96,7 +96,7 @@ Go to section [Access required endpoints](#access)
     ```
     # Go to source directory
     cd source
-    pip install -f requirements.txt
+    pip install -r requirements.txt
     ```
 3. Start Flask application
     ```
