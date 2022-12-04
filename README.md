@@ -108,9 +108,9 @@ Go to section [Access required endpoints](#access)
 
 ## Access required endpoints
 
-Once you have started the application either usign Docker or as standalone application
+Once you have started the application either using Docker or as standalone application. Following steps shows url based on assumptino that it has started on given URL and port. You may need to change it based on how the application was started.
 
-1. Enter following URL into your browser, once docker cotnainer is started
+1. Enter following URL into your browser, once docker cotnainer or your application is started
 
     ```
     http://localhost:5000
