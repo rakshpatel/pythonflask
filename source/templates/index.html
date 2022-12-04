@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock head %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center"> Ship Data</h1>
+    {% if shipdata|length < 1%}
+    <h4 style="text-align: center"> No data available, please add new </h4>
+    {% else %}
+        <table>
+            <tr> 
+                <th>IMO</th>
+                <th>Shipname</th> 
+            </tr>
+            {% for ship in shipdata %}
+                <tr>
+                    <td>{{ ship.imo }}</td>
+                    <td>{{ ship.name }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</div>
+
+
+
+
+{% endblock %}

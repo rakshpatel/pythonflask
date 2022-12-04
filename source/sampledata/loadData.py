@@ -1,8 +1,8 @@
 import sqlite3
 import pandas as pd
 
-#DATABASE_PATH="../shipsdata.db"
-DATABASE_PATH="tempdb.db"
+DATABASE_PATH="../shipsdata.db"
+# DATABASE_PATH="tempdb.db"
 conn = sqlite3.connect(DATABASE_PATH)
 
 
