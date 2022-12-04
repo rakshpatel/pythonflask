@@ -64,7 +64,7 @@ Clone the application to your local environment into one directory and go to dow
 
 ```
 git clone https://github.com/rakshpatel/pythonflask.git
-cd pythonfask
+cd pythonflask
 ```
 
 ## Using Dockerfile
